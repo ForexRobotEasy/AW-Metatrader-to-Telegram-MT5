@@ -1,0 +1,70 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                              AW Metatrader to Telegram MT5                                               |
+//|                                   Developer: Forex Robot Easy Team                                   |
+//|                                          Developer's Site: forexroboteasy.com                                          |
+//+------------------------------------------------------------------+
+
+// Define necessary variables
+string apiKey;
+string chatId;
+string notificationText;
+int screenshotWidth;
+int screenshotHeight;
+
+// Define trading functions
+void RetrieveTradingEvents()
+{
+    // Code to retrieve trading events from the trading terminal
+}
+
+string FormatNotificationMessages()
+{
+    // Code to format the trading events into notification messages
+    return notificationText;
+}
+
+void SendNotificationMessages()
+{
+    // Code to send the notification messages to subscribers via the Telegram messenger
+}
+
+// Define setup interface
+void SetupInterface()
+{
+    // Code to create a user-friendly interface for setting up the utility
+}
+
+// Define adjustable screenshots
+void CaptureScreenshots()
+{
+    // Code to capture screenshots of the trading events
+}
+
+void AdjustScreenshots()
+{
+    // Code to allow users to adjust the captured screenshots before sending them
+}
+
+// Define customizable notification text
+void ReceiveUserInput()
+{
+    // Code to receive user input for customizing the notification text
+}
+
+void IncludeEmoji()
+{
+    // Code to allow users to include emoji in the notification messages
+}
+
+// Main function
+void OnStart()
+{
+    SetupInterface();
+    RetrieveTradingEvents();
+    notificationText = FormatNotificationMessages();
+    CaptureScreenshots();
+    AdjustScreenshots();
+    SendNotificationMessages();
+}
+
